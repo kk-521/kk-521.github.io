@@ -73,6 +73,7 @@
                 <textarea rows="20" id="left-input" style="flex:1"></textarea>
            
             <div class="buttons" style="flex-direction: column;display: flex;justify-content: center;padding:15px;">
+                <button onclick="onClear()">clear</button>
                 <button onclick="onEncode()">encode&gt;&gt;</button>
                 <button onclick="onDecode()">decode&gt;&gt;</button>
                 <button onclick="onCopy()">copy&gt;&gt;</button>
@@ -105,6 +106,13 @@
             resultDOM.setSelectionRange(0,9999999)
             document.execCommand('copy')
             printD.text("copy finish")
+        }
+        function onClear(){
+            outputR.val('')
+            inputL.val('')
+            var inputDOM = inputL[0]
+            inputDOM.select()
+            inputDOM.setSelectionRange(0,1)
         }
     </script>
 </body>
