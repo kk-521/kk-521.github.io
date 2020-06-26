@@ -74,26 +74,37 @@
            
             <div class="buttons" style="flex-direction: column;display: flex;justify-content: center;padding:15px;">
                 <button onclick="onEncode()">encode&gt;&gt;</button>
-                <button onclick="onDecode()">&lt;&lt;decode</button>
+                <button onclick="onDecode()">decode&gt;&gt;</button>
+                <button onclick="onCopy()">copy&gt;&gt;</button>
             </div>
-                 <textarea rows="20" id="right-input" style="flex:1"></textarea>
+                 <textarea rows="20" id="right-output" style="flex:1"></textarea>
         </div> 
+        <p id="print-zone"></p>
     </div>
     <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-    crossorigin="anonymous"></script>
+    src="./lib/jq.js"></script>
     <script src="kitty.js"></script>
     <script>
-        var inputL = $("#left-input")
-        var inputR = $("#right-input")
+        var inputL = $("#left-input");
+        var outputR = $("#right-output");
+        var printD = $("#print-zone");
         var my_key = ['[微笑]','[撇嘴]','[色]','[发呆]','[得意]','[流泪]','[害羞]','[闭嘴]','[睡]','[大哭]','[尴尬]','[发怒]','[调皮]','[呲牙]','[惊讶]','[难过]','[囧]','[抓狂]','[吐]','[偷笑]','[愉快]','[白眼]','[傲慢]','[困]','[惊恐]','[流汗]','[憨笑]','[悠闲]','[奋斗]','[咒骂]','[疑问]','[嘘]','[晕]','[衰]','[骷髅]','[敲打]','[再见]','[擦汗]','[抠鼻]','[鼓掌]','[坏笑]','[左哼哼]','[右哼哼]','[哈欠]','[鄙视]','[委屈]','[快哭了]','[阴险]','[亲亲]','[可怜]','[菜刀]','[西瓜]','[啤酒]','[咖啡]','[猪头]','[玫瑰]','[凋谢]','[嘴唇]','[爱心]','[心碎]','[蛋糕]','[炸弹]','[便便]','[月亮]','[太阳]','[拥抱]','[强]','[弱]','[握手]','[胜利]']
-        var base_key = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/=0123456789"
+        var base_key = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/=0123456789";
+
         function onEncode(){
-            inputR.val(encode2(inputL.val(),my_key,base_key))
+            printD.text('')
+            outputR.val(encode2(inputL.val(),my_key,base_key))
         }
         function onDecode(){
-            inputL.val(decode2(inputR.val(),my_key,base_key))
+            outputR.val(decode2(inputL.val(),my_key,base_key))
+            printD.text('')
+        }
+        function onCopy(){
+            var resultDOM = outputR[0]
+            resultDOM.select()
+            resultDOM.setSelectionRange(0,9999999)
+            document.execCommand('copy')
+            printD.text("copy finish")
         }
     </script>
 </body>
