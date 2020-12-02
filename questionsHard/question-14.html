@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            html,body{
+                height: 100%;
+            }
+            .options{
+                list-style: none;
+                padding: 0;
+            }
+            .hide{
+                display: none;
+            }
+            .good{
+                color:green;
+            }
+            .wrong{
+                color: red;
+            }
+            .app{
+                margin:15px;
+                overflow:scroll;
+                flex:1;
+            }
+        </style>
+    </head>
+    <body style="display: flex;flex-direction: column;">
+        <div>
+            <button onclick="showResult()">submit</button>
+            <button onclick="setWrongQuestion()">show wrong IDs</button>
+            <span id="score"></span>
+        </div>
+        <div class="app">
+             
+    <div class="question-zone" id="q-72" data-value="2">
+     <span>1-adopt</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-72" id="option-72-a" value="0"/><label for="option-72-a">A.n.边，边缘；边界</label></li>
+         <li><input type="radio"  name="options-72" id="option-72-b" value="1"/><label for="option-72-b">B.vt.沾污；给…着色</label></li>
+         <li><input type="radio"  name="options-72" id="option-72-c" value="2"/><label for="option-72-c">C.vt.收养；采用；采取</label></li>
+         <li><input type="radio"  name="options-72" id="option-72-d" value="3"/><label for="option-72-d">D.vt.压紧，压缩</label></li>
+         <li><input type="radio"  name="options-72" id="option-72-e" value="-1"/><label for="option-72-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-72">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C vt.收养；采用；采取</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-1050" data-value="2">
+     <span>2-devise</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-1050" id="option-1050-a" value="0"/><label for="option-1050-a">A.vt.宣(誓) vi.诅咒</label></li>
+         <li><input type="radio"  name="options-1050" id="option-1050-b" value="1"/><label for="option-1050-b">B.n.动机，目的</label></li>
+         <li><input type="radio"  name="options-1050" id="option-1050-c" value="2"/><label for="option-1050-c">C.vt.设计，发明</label></li>
+         <li><input type="radio"  name="options-1050" id="option-1050-d" value="3"/><label for="option-1050-d">D.a.圆的；循环的</label></li>
+         <li><input type="radio"  name="options-1050" id="option-1050-e" value="-1"/><label for="option-1050-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-1050">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C vt.设计，发明</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2853" data-value="2">
+     <span>3-physician</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2853" id="option-2853-a" value="0"/><label for="option-2853-a">A.vt.洗；冲出 vi.洗涤</label></li>
+         <li><input type="radio"  name="options-2853" id="option-2853-b" value="1"/><label for="option-2853-b">B.n.羊群，群；大量</label></li>
+         <li><input type="radio"  name="options-2853" id="option-2853-c" value="2"/><label for="option-2853-c">C.n.医生，内科医生</label></li>
+         <li><input type="radio"  name="options-2853" id="option-2853-d" value="3"/><label for="option-2853-d">D.a.首要的 n.春，青春</label></li>
+         <li><input type="radio"  name="options-2853" id="option-2853-e" value="-1"/><label for="option-2853-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2853">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C n.医生，内科医生</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-1814" data-value="3">
+     <span>4-hedge</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-1814" id="option-1814-a" value="0"/><label for="option-1814-a">A.prep.在…上；在…旁</label></li>
+         <li><input type="radio"  name="options-1814" id="option-1814-b" value="1"/><label for="option-1814-b">B.ad.实际上；几乎</label></li>
+         <li><input type="radio"  name="options-1814" id="option-1814-c" value="2"/><label for="option-1814-c">C.a.最初的；第一流的</label></li>
+         <li><input type="radio"  name="options-1814" id="option-1814-d" value="3"/><label for="option-1814-d">D.n.篱笆，树篱；障碍物</label></li>
+         <li><input type="radio"  name="options-1814" id="option-1814-e" value="-1"/><label for="option-1814-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-1814">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.篱笆，树篱；障碍物</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-988" data-value="3">
+     <span>5-deed</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-988" id="option-988-a" value="0"/><label for="option-988-a">A.ad.只，仅仅 a.唯一的</label></li>
+         <li><input type="radio"  name="options-988" id="option-988-b" value="1"/><label for="option-988-b">B.vi.发生；碰巧，恰好</label></li>
+         <li><input type="radio"  name="options-988" id="option-988-c" value="2"/><label for="option-988-c">C.n.管；电子管，显像管</label></li>
+         <li><input type="radio"  name="options-988" id="option-988-d" value="3"/><label for="option-988-d">D.n.行为；功绩；契约</label></li>
+         <li><input type="radio"  name="options-988" id="option-988-e" value="-1"/><label for="option-988-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-988">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.行为；功绩；契约</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-3170" data-value="3">
+     <span>6-reap</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-3170" id="option-3170-a" value="0"/><label for="option-3170-a">A.n.文化，文明；教养</label></li>
+         <li><input type="radio"  name="options-3170" id="option-3170-b" value="1"/><label for="option-3170-b">B.n.冒险；惊险活动</label></li>
+         <li><input type="radio"  name="options-3170" id="option-3170-c" value="2"/><label for="option-3170-c">C.a.无用的，无价值的</label></li>
+         <li><input type="radio"  name="options-3170" id="option-3170-d" value="3"/><label for="option-3170-d">D.vt.&vi.收割，收获</label></li>
+         <li><input type="radio"  name="options-3170" id="option-3170-e" value="-1"/><label for="option-3170-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-3170">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D vt.&vi.收割，收获</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-4107" data-value="3">
+     <span>7-tomb</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-4107" id="option-4107-a" value="0"/><label for="option-4107-a">A.n.葡萄酒，果酒</label></li>
+         <li><input type="radio"  name="options-4107" id="option-4107-b" value="1"/><label for="option-4107-b">B.n.贮藏；贮存品；商店</label></li>
+         <li><input type="radio"  name="options-4107" id="option-4107-c" value="2"/><label for="option-4107-c">C.a.完全的，彻底的</label></li>
+         <li><input type="radio"  name="options-4107" id="option-4107-d" value="3"/><label for="option-4107-d">D.n.坟，冢</label></li>
+         <li><input type="radio"  name="options-4107" id="option-4107-e" value="-1"/><label for="option-4107-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-4107">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.坟，冢</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-4231" data-value="3">
+     <span>8-unconscious</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-4231" id="option-4231-a" value="0"/><label for="option-4231-a">A.n.性格；特性；角色</label></li>
+         <li><input type="radio"  name="options-4231" id="option-4231-b" value="1"/><label for="option-4231-b">B.a.官员的；官方的</label></li>
+         <li><input type="radio"  name="options-4231" id="option-4231-c" value="2"/><label for="option-4231-c">C.n.巨人；巨物</label></li>
+         <li><input type="radio"  name="options-4231" id="option-4231-d" value="3"/><label for="option-4231-d">D.a.不省人事的</label></li>
+         <li><input type="radio"  name="options-4231" id="option-4231-e" value="-1"/><label for="option-4231-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-4231">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D a.不省人事的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-578" data-value="2">
+     <span>9-casual</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-578" id="option-578-a" value="0"/><label for="option-578-a">A.vi.打呵欠 n.呵欠</label></li>
+         <li><input type="radio"  name="options-578" id="option-578-b" value="1"/><label for="option-578-b">B.vt.伸开；传播 n.传播</label></li>
+         <li><input type="radio"  name="options-578" id="option-578-c" value="2"/><label for="option-578-c">C.a.偶然的；随便的</label></li>
+         <li><input type="radio"  name="options-578" id="option-578-d" value="3"/><label for="option-578-d">D.n.牛；公牛，阉牛</label></li>
+         <li><input type="radio"  name="options-578" id="option-578-e" value="-1"/><label for="option-578-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-578">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C a.偶然的；随便的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2469" data-value="3">
+     <span>10-mood</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2469" id="option-2469-a" value="0"/><label for="option-2469-a">A.n.文明，文化；开化</label></li>
+         <li><input type="radio"  name="options-2469" id="option-2469-b" value="1"/><label for="option-2469-b">B.vt.装；装满 n.负载</label></li>
+         <li><input type="radio"  name="options-2469" id="option-2469-c" value="2"/><label for="option-2469-c">C.n.钥匙；键；答案</label></li>
+         <li><input type="radio"  name="options-2469" id="option-2469-d" value="3"/><label for="option-2469-d">D.n.心情，情绪；语气</label></li>
+         <li><input type="radio"  name="options-2469" id="option-2469-e" value="-1"/><label for="option-2469-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2469">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.心情，情绪；语气</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2073" data-value="0">
+     <span>11-jam</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2073" id="option-2073-a" value="0"/><label for="option-2073-a">A.n.果酱</label></li>
+         <li><input type="radio"  name="options-2073" id="option-2073-b" value="1"/><label for="option-2073-b">B.n.激光</label></li>
+         <li><input type="radio"  name="options-2073" id="option-2073-c" value="2"/><label for="option-2073-c">C.n.厨房，灶间</label></li>
+         <li><input type="radio"  name="options-2073" id="option-2073-d" value="3"/><label for="option-2073-d">D.n.发热，发烧；狂热</label></li>
+         <li><input type="radio"  name="options-2073" id="option-2073-e" value="-1"/><label for="option-2073-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2073">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:A n.果酱</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2903" data-value="1">
+     <span>12-plough</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2903" id="option-2903-a" value="0"/><label for="option-2903-a">A.n.偏爱，优先(权)</label></li>
+         <li><input type="radio"  name="options-2903" id="option-2903-b" value="1"/><label for="option-2903-b">B.n.犁 vt.&vi.犁，耕</label></li>
+         <li><input type="radio"  name="options-2903" id="option-2903-c" value="2"/><label for="option-2903-c">C.n.垫子，坐垫，靠垫</label></li>
+         <li><input type="radio"  name="options-2903" id="option-2903-d" value="3"/><label for="option-2903-d">D.n.猫头鹰，枭</label></li>
+         <li><input type="radio"  name="options-2903" id="option-2903-e" value="-1"/><label for="option-2903-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2903">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:B n.犁 vt.&vi.犁，耕</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-3410" data-value="1">
+     <span>13-saint</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-3410" id="option-3410-a" value="0"/><label for="option-3410-a">A.a.首要的 n.春，青春</label></li>
+         <li><input type="radio"  name="options-3410" id="option-3410-b" value="1"/><label for="option-3410-b">B.n.圣徒；基督教徒</label></li>
+         <li><input type="radio"  name="options-3410" id="option-3410-c" value="2"/><label for="option-3410-c">C.ad.广，广泛</label></li>
+         <li><input type="radio"  name="options-3410" id="option-3410-d" value="3"/><label for="option-3410-d">D.a.特殊的；特定的</label></li>
+         <li><input type="radio"  name="options-3410" id="option-3410-e" value="-1"/><label for="option-3410-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-3410">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:B n.圣徒；基督教徒</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-1181" data-value="1">
+     <span>14-durable</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-1181" id="option-1181-a" value="0"/><label for="option-1181-a">A.n.爵士音乐，爵士舞曲</label></li>
+         <li><input type="radio"  name="options-1181" id="option-1181-b" value="1"/><label for="option-1181-b">B.a.耐久的，耐用的</label></li>
+         <li><input type="radio"  name="options-1181" id="option-1181-c" value="2"/><label for="option-1181-c">C.n.痛，疼痛；辛苦</label></li>
+         <li><input type="radio"  name="options-1181" id="option-1181-d" value="3"/><label for="option-1181-d">D.ad.日益，越来越多地</label></li>
+         <li><input type="radio"  name="options-1181" id="option-1181-e" value="-1"/><label for="option-1181-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-1181">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:B a.耐久的，耐用的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2266" data-value="3">
+     <span>15-locomotive</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2266" id="option-2266-a" value="0"/><label for="option-2266-a">A.n.(政府的)部</label></li>
+         <li><input type="radio"  name="options-2266" id="option-2266-b" value="1"/><label for="option-2266-b">B.a.容易的；安逸的</label></li>
+         <li><input type="radio"  name="options-2266" id="option-2266-c" value="2"/><label for="option-2266-c">C.n.港，港口</label></li>
+         <li><input type="radio"  name="options-2266" id="option-2266-d" value="3"/><label for="option-2266-d">D.n.火车头，机车</label></li>
+         <li><input type="radio"  name="options-2266" id="option-2266-e" value="-1"/><label for="option-2266-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2266">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.火车头，机车</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-1788" data-value="3">
+     <span>16-hatch</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-1788" id="option-1788-a" value="0"/><label for="option-1788-a">A.n.意义，意味；重要性</label></li>
+         <li><input type="radio"  name="options-1788" id="option-1788-b" value="1"/><label for="option-1788-b">B.a.黑色的；黑暗的</label></li>
+         <li><input type="radio"  name="options-1788" id="option-1788-c" value="2"/><label for="option-1788-c">C.n.咽喉，喉咙；嗓音</label></li>
+         <li><input type="radio"  name="options-1788" id="option-1788-d" value="3"/><label for="option-1788-d">D.vt.孵出 vi.(蛋)孵化</label></li>
+         <li><input type="radio"  name="options-1788" id="option-1788-e" value="-1"/><label for="option-1788-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-1788">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D vt.孵出 vi.(蛋)孵化</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-1911" data-value="0">
+     <span>17-ignorant</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-1911" id="option-1911-a" value="0"/><label for="option-1911-a">A.a.不知道的；无知的</label></li>
+         <li><input type="radio"  name="options-1911" id="option-1911-b" value="1"/><label for="option-1911-b">B.n.急速，急忙；草率</label></li>
+         <li><input type="radio"  name="options-1911" id="option-1911-c" value="2"/><label for="option-1911-c">C.n.煤，煤块</label></li>
+         <li><input type="radio"  name="options-1911" id="option-1911-d" value="3"/><label for="option-1911-d">D.n.限度；限制；范围</label></li>
+         <li><input type="radio"  name="options-1911" id="option-1911-e" value="-1"/><label for="option-1911-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-1911">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:A a.不知道的；无知的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2392" data-value="2">
+     <span>18-merchant</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2392" id="option-2392-a" value="0"/><label for="option-2392-a">A.a.容易的；安逸的</label></li>
+         <li><input type="radio"  name="options-2392" id="option-2392-b" value="1"/><label for="option-2392-b">B.n.楼梯</label></li>
+         <li><input type="radio"  name="options-2392" id="option-2392-c" value="2"/><label for="option-2392-c">C.n.商人；零售商</label></li>
+         <li><input type="radio"  name="options-2392" id="option-2392-d" value="3"/><label for="option-2392-d">D.n.分离，分开/居</label></li>
+         <li><input type="radio"  name="options-2392" id="option-2392-e" value="-1"/><label for="option-2392-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2392">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C n.商人；零售商</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-1645" data-value="3">
+     <span>19-generous</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-1645" id="option-1645-a" value="0"/><label for="option-1645-a">A.n.父亲，母亲，双亲</label></li>
+         <li><input type="radio"  name="options-1645" id="option-1645-b" value="1"/><label for="option-1645-b">B.a.空闲的；懒散的</label></li>
+         <li><input type="radio"  name="options-1645" id="option-1645-c" value="2"/><label for="option-1645-c">C.ad.经常，常常</label></li>
+         <li><input type="radio"  name="options-1645" id="option-1645-d" value="3"/><label for="option-1645-d">D.a.慷慨的；宽厚的</label></li>
+         <li><input type="radio"  name="options-1645" id="option-1645-e" value="-1"/><label for="option-1645-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-1645">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D a.慷慨的；宽厚的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-4367" data-value="2">
+     <span>20-volcano</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-4367" id="option-4367-a" value="0"/><label for="option-4367-a">A.n.耳朵；听力，听觉</label></li>
+         <li><input type="radio"  name="options-4367" id="option-4367-b" value="1"/><label for="option-4367-b">B.a.快的 n.急流</label></li>
+         <li><input type="radio"  name="options-4367" id="option-4367-c" value="2"/><label for="option-4367-c">C.n.火山</label></li>
+         <li><input type="radio"  name="options-4367" id="option-4367-d" value="3"/><label for="option-4367-d">D.ad.(在)国外；到处</label></li>
+         <li><input type="radio"  name="options-4367" id="option-4367-e" value="-1"/><label for="option-4367-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-4367">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C n.火山</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2591" data-value="2">
+     <span>21-nose</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2591" id="option-2591-a" value="0"/><label for="option-2591-a">A.n.混乱，混杂，肮脏</label></li>
+         <li><input type="radio"  name="options-2591" id="option-2591-b" value="1"/><label for="option-2591-b">B.a.不安定的，焦虑的</label></li>
+         <li><input type="radio"  name="options-2591" id="option-2591-c" value="2"/><label for="option-2591-c">C.n.鼻子；突出部分</label></li>
+         <li><input type="radio"  name="options-2591" id="option-2591-d" value="3"/><label for="option-2591-d">D.vi.&vt.&n.踢</label></li>
+         <li><input type="radio"  name="options-2591" id="option-2591-e" value="-1"/><label for="option-2591-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2591">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C n.鼻子；突出部分</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2973" data-value="2">
+     <span>22-precision</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2973" id="option-2973-a" value="0"/><label for="option-2973-a">A.vt.教育；培养；训练</label></li>
+         <li><input type="radio"  name="options-2973" id="option-2973-b" value="1"/><label for="option-2973-b">B.vt.&vi.探险，探索</label></li>
+         <li><input type="radio"  name="options-2973" id="option-2973-c" value="2"/><label for="option-2973-c">C.n.精确，精密，精密度</label></li>
+         <li><input type="radio"  name="options-2973" id="option-2973-d" value="3"/><label for="option-2973-d">D.vt.包含，包括；构成</label></li>
+         <li><input type="radio"  name="options-2973" id="option-2973-e" value="-1"/><label for="option-2973-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2973">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C n.精确，精密，精密度</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-752" data-value="3">
+     <span>23-competent</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-752" id="option-752-a" value="0"/><label for="option-752-a">A.n.加，加法；附加物</label></li>
+         <li><input type="radio"  name="options-752" id="option-752-b" value="1"/><label for="option-752-b">B.n.泵 vt.用抽机抽</label></li>
+         <li><input type="radio"  name="options-752" id="option-752-c" value="2"/><label for="option-752-c">C.vt.推，逼迫 vi.推</label></li>
+         <li><input type="radio"  name="options-752" id="option-752-d" value="3"/><label for="option-752-d">D.a.有能力的；应该做的</label></li>
+         <li><input type="radio"  name="options-752" id="option-752-e" value="-1"/><label for="option-752-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-752">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D a.有能力的；应该做的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-3292" data-value="2">
+     <span>24-resort</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-3292" id="option-3292-a" value="0"/><label for="option-3292-a">A.ad.相当；公平地</label></li>
+         <li><input type="radio"  name="options-3292" id="option-3292-b" value="1"/><label for="option-3292-b">B.n.墨水，油墨</label></li>
+         <li><input type="radio"  name="options-3292" id="option-3292-c" value="2"/><label for="option-3292-c">C.vi.&n.求助，凭借</label></li>
+         <li><input type="radio"  name="options-3292" id="option-3292-d" value="3"/><label for="option-3292-d">D.a.嘈杂的；喧闹的</label></li>
+         <li><input type="radio"  name="options-3292" id="option-3292-e" value="-1"/><label for="option-3292-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-3292">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C vi.&n.求助，凭借</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-28" data-value="1">
+     <span>25-accommodate</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-28" id="option-28-a" value="0"/><label for="option-28-a">A.vi.沸腾；汽化 vt.煮沸</label></li>
+         <li><input type="radio"  name="options-28" id="option-28-b" value="1"/><label for="option-28-b">B.vt.容纳;供应,供给</label></li>
+         <li><input type="radio"  name="options-28" id="option-28-c" value="2"/><label for="option-28-c">C.a.最后的；决定性的</label></li>
+         <li><input type="radio"  name="options-28" id="option-28-d" value="3"/><label for="option-28-d">D.a.抽象的 n.摘要</label></li>
+         <li><input type="radio"  name="options-28" id="option-28-e" value="-1"/><label for="option-28-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-28">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:B vt.容纳;供应,供给</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-3713" data-value="3">
+     <span>26-sow</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-3713" id="option-3713-a" value="0"/><label for="option-3713-a">A.vt.察觉，发觉；侦察</label></li>
+         <li><input type="radio"  name="options-3713" id="option-3713-b" value="1"/><label for="option-3713-b">B.vi.躺，平放；位于</label></li>
+         <li><input type="radio"  name="options-3713" id="option-3713-c" value="2"/><label for="option-3713-c">C.prep.在…里；在…时</label></li>
+         <li><input type="radio"  name="options-3713" id="option-3713-d" value="3"/><label for="option-3713-d">D.vt.播(种) vi.播种</label></li>
+         <li><input type="radio"  name="options-3713" id="option-3713-e" value="-1"/><label for="option-3713-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-3713">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D vt.播(种) vi.播种</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2384" data-value="0">
+     <span>27-melt</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2384" id="option-2384-a" value="0"/><label for="option-2384-a">A.vi.融化 vt.使融化</label></li>
+         <li><input type="radio"  name="options-2384" id="option-2384-b" value="1"/><label for="option-2384-b">B.ad.又一次；而且</label></li>
+         <li><input type="radio"  name="options-2384" id="option-2384-c" value="2"/><label for="option-2384-c">C.n.劳动；工作；劳工</label></li>
+         <li><input type="radio"  name="options-2384" id="option-2384-d" value="3"/><label for="option-2384-d">D.n.杆，杠杆；控制杆</label></li>
+         <li><input type="radio"  name="options-2384" id="option-2384-e" value="-1"/><label for="option-2384-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2384">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:A vi.融化 vt.使融化</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2482" data-value="3">
+     <span>28-motive</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2482" id="option-2482-a" value="0"/><label for="option-2482-a">A.vt.对(财产等)估价</label></li>
+         <li><input type="radio"  name="options-2482" id="option-2482-b" value="1"/><label for="option-2482-b">B.n.生涯，职业，经历</label></li>
+         <li><input type="radio"  name="options-2482" id="option-2482-c" value="2"/><label for="option-2482-c">C.n.银行；库；岩，堤</label></li>
+         <li><input type="radio"  name="options-2482" id="option-2482-d" value="3"/><label for="option-2482-d">D.n.动机，目的</label></li>
+         <li><input type="radio"  name="options-2482" id="option-2482-e" value="-1"/><label for="option-2482-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2482">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.动机，目的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-128" data-value="3">
+     <span>29-alternative</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-128" id="option-128-a" value="0"/><label for="option-128-a">A.n.闸，刹车 vi.制动</label></li>
+         <li><input type="radio"  name="options-128" id="option-128-b" value="1"/><label for="option-128-b">B.n.太阳，日</label></li>
+         <li><input type="radio"  name="options-128" id="option-128-c" value="2"/><label for="option-128-c">C.vt.捉住；赶上；领会</label></li>
+         <li><input type="radio"  name="options-128" id="option-128-d" value="3"/><label for="option-128-d">D.n.替换物；取舍，抉择</label></li>
+         <li><input type="radio"  name="options-128" id="option-128-e" value="-1"/><label for="option-128-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-128">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.替换物；取舍，抉择</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-3754" data-value="1">
+     <span>30-spontaneous</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-3754" id="option-3754-a" value="0"/><label for="option-3754-a">A.vt.弄翻，打翻，倾覆</label></li>
+         <li><input type="radio"  name="options-3754" id="option-3754-b" value="1"/><label for="option-3754-b">B.a.自发/本能的</label></li>
+         <li><input type="radio"  name="options-3754" id="option-3754-c" value="2"/><label for="option-3754-c">C.vt.拥抱；包括；包围</label></li>
+         <li><input type="radio"  name="options-3754" id="option-3754-d" value="3"/><label for="option-3754-d">D.n.叶轮机，汽轮机</label></li>
+         <li><input type="radio"  name="options-3754" id="option-3754-e" value="-1"/><label for="option-3754-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-3754">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:B a.自发/本能的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-3569" data-value="2">
+     <span>31-shout</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-3569" id="option-3569-a" value="0"/><label for="option-3569-a">A.a.确实的；肯定的</label></li>
+         <li><input type="radio"  name="options-3569" id="option-3569-b" value="1"/><label for="option-3569-b">B.n.容量；能力；能量</label></li>
+         <li><input type="radio"  name="options-3569" id="option-3569-c" value="2"/><label for="option-3569-c">C.n.&vi.呼喊，喊叫</label></li>
+         <li><input type="radio"  name="options-3569" id="option-3569-d" value="3"/><label for="option-3569-d">D.vi.吐 vi.吐唾沫</label></li>
+         <li><input type="radio"  name="options-3569" id="option-3569-e" value="-1"/><label for="option-3569-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-3569">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C n.&vi.呼喊，喊叫</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-430" data-value="0">
+     <span>32-bore</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-430" id="option-430-a" value="0"/><label for="option-430-a">A.vt.使厌烦；钻，挖</label></li>
+         <li><input type="radio"  name="options-430" id="option-430-b" value="1"/><label for="option-430-b">B.vi.变成；成为，变得</label></li>
+         <li><input type="radio"  name="options-430" id="option-430-c" value="2"/><label for="option-430-c">C.n.角；犄角；边远地区</label></li>
+         <li><input type="radio"  name="options-430" id="option-430-d" value="3"/><label for="option-430-d">D.n.公文，文件；证件</label></li>
+         <li><input type="radio"  name="options-430" id="option-430-e" value="-1"/><label for="option-430-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-430">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:A vt.使厌烦；钻，挖</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2930" data-value="3">
+     <span>33-pop</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2930" id="option-2930-a" value="0"/><label for="option-2930-a">A.a.自动的；机械的</label></li>
+         <li><input type="radio"  name="options-2930" id="option-2930-b" value="1"/><label for="option-2930-b">B.n.纤维，纤维质</label></li>
+         <li><input type="radio"  name="options-2930" id="option-2930-c" value="2"/><label for="option-2930-c">C.num.第十二</label></li>
+         <li><input type="radio"  name="options-2930" id="option-2930-d" value="3"/><label for="option-2930-d">D.n.流行音乐，流行歌曲</label></li>
+         <li><input type="radio"  name="options-2930" id="option-2930-e" value="-1"/><label for="option-2930-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2930">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.流行音乐，流行歌曲</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-3674" data-value="3">
+     <span>34-soil</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-3674" id="option-3674-a" value="0"/><label for="option-3674-a">A.n.油；石油 vt.加油于</label></li>
+         <li><input type="radio"  name="options-3674" id="option-3674-b" value="1"/><label for="option-3674-b">B.vt.放，摆；使处于</label></li>
+         <li><input type="radio"  name="options-3674" id="option-3674-c" value="2"/><label for="option-3674-c">C.n.安培</label></li>
+         <li><input type="radio"  name="options-3674" id="option-3674-d" value="3"/><label for="option-3674-d">D.n.泥土，土壤，土地</label></li>
+         <li><input type="radio"  name="options-3674" id="option-3674-e" value="-1"/><label for="option-3674-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-3674">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.泥土，土壤，土地</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2374" data-value="2">
+     <span>35-mechanically</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2374" id="option-2374-a" value="0"/><label for="option-2374-a">A.n.盥洗室，厕所</label></li>
+         <li><input type="radio"  name="options-2374" id="option-2374-b" value="1"/><label for="option-2374-b">B.ad.普通地，一般地</label></li>
+         <li><input type="radio"  name="options-2374" id="option-2374-c" value="2"/><label for="option-2374-c">C.ad.机械地</label></li>
+         <li><input type="radio"  name="options-2374" id="option-2374-d" value="3"/><label for="option-2374-d">D.vt.鞭笞；搅打 n.鞭子</label></li>
+         <li><input type="radio"  name="options-2374" id="option-2374-e" value="-1"/><label for="option-2374-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2374">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C ad.机械地</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-854" data-value="2">
+     <span>36-convince</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-854" id="option-854-a" value="0"/><label for="option-854-a">A.n.瓶，酒瓶；一瓶</label></li>
+         <li><input type="radio"  name="options-854" id="option-854-b" value="1"/><label for="option-854-b">B.n.商品；烙印 vt.铭刻</label></li>
+         <li><input type="radio"  name="options-854" id="option-854-c" value="2"/><label for="option-854-c">C.vt.使确信，使信服</label></li>
+         <li><input type="radio"  name="options-854" id="option-854-d" value="3"/><label for="option-854-d">D.n.影片；胶卷；薄层</label></li>
+         <li><input type="radio"  name="options-854" id="option-854-e" value="-1"/><label for="option-854-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-854">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C vt.使确信，使信服</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2278" data-value="2">
+     <span>37-lorry</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2278" id="option-2278-a" value="0"/><label for="option-2278-a">A.a.基本的，基础的</label></li>
+         <li><input type="radio"  name="options-2278" id="option-2278-b" value="1"/><label for="option-2278-b">B.n.例行公事 a.日常的</label></li>
+         <li><input type="radio"  name="options-2278" id="option-2278-c" value="2"/><label for="option-2278-c">C.n.运货汽车，卡车</label></li>
+         <li><input type="radio"  name="options-2278" id="option-2278-d" value="3"/><label for="option-2278-d">D.ad.到处，处处</label></li>
+         <li><input type="radio"  name="options-2278" id="option-2278-e" value="-1"/><label for="option-2278-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2278">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C n.运货汽车，卡车</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-4513" data-value="2">
+     <span>38-wound</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-4513" id="option-4513-a" value="0"/><label for="option-4513-a">A.a.年轻的，青年的</label></li>
+         <li><input type="radio"  name="options-4513" id="option-4513-b" value="1"/><label for="option-4513-b">B.vt.调整，调节；校正</label></li>
+         <li><input type="radio"  name="options-4513" id="option-4513-c" value="2"/><label for="option-4513-c">C.n.创伤，伤 vt.使受伤</label></li>
+         <li><input type="radio"  name="options-4513" id="option-4513-d" value="3"/><label for="option-4513-d">D.a.否定的；消极的</label></li>
+         <li><input type="radio"  name="options-4513" id="option-4513-e" value="-1"/><label for="option-4513-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-4513">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C n.创伤，伤 vt.使受伤</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2723" data-value="3">
+     <span>39-overcome</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2723" id="option-2723-a" value="0"/><label for="option-2723-a">A.pron.任何人</label></li>
+         <li><input type="radio"  name="options-2723" id="option-2723-b" value="1"/><label for="option-2723-b">B.vt.散发；发射；发表</label></li>
+         <li><input type="radio"  name="options-2723" id="option-2723-c" value="2"/><label for="option-2723-c">C.n.序言，前言，引语</label></li>
+         <li><input type="radio"  name="options-2723" id="option-2723-d" value="3"/><label for="option-2723-d">D.vt.战胜，克服</label></li>
+         <li><input type="radio"  name="options-2723" id="option-2723-e" value="-1"/><label for="option-2723-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2723">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D vt.战胜，克服</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-3336" data-value="2">
+     <span>40-ridiculous</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-3336" id="option-3336-a" value="0"/><label for="option-3336-a">A.a.危险的，不安全的</label></li>
+         <li><input type="radio"  name="options-3336" id="option-3336-b" value="1"/><label for="option-3336-b">B.n.物；用品；事；情况</label></li>
+         <li><input type="radio"  name="options-3336" id="option-3336-c" value="2"/><label for="option-3336-c">C.a.荒谬的，可笑的</label></li>
+         <li><input type="radio"  name="options-3336" id="option-3336-d" value="3"/><label for="option-3336-d">D.n.短文，散文，小品文</label></li>
+         <li><input type="radio"  name="options-3336" id="option-3336-e" value="-1"/><label for="option-3336-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-3336">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C a.荒谬的，可笑的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-522" data-value="3">
+     <span>41-cafeteria</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-522" id="option-522-a" value="0"/><label for="option-522-a">A.vt.&n.提及，说起</label></li>
+         <li><input type="radio"  name="options-522" id="option-522-b" value="1"/><label for="option-522-b">B.vt.探明，找出，查出</label></li>
+         <li><input type="radio"  name="options-522" id="option-522-c" value="2"/><label for="option-522-c">C.n.耳朵；听力，听觉</label></li>
+         <li><input type="radio"  name="options-522" id="option-522-d" value="3"/><label for="option-522-d">D.n.自助食堂</label></li>
+         <li><input type="radio"  name="options-522" id="option-522-e" value="-1"/><label for="option-522-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-522">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.自助食堂</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2865" data-value="3">
+     <span>42-pile</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2865" id="option-2865-a" value="0"/><label for="option-2865-a">A.n.葡萄酒，果酒</label></li>
+         <li><input type="radio"  name="options-2865" id="option-2865-b" value="1"/><label for="option-2865-b">B.a.一样的 n.制服</label></li>
+         <li><input type="radio"  name="options-2865" id="option-2865-c" value="2"/><label for="option-2865-c">C.n.沙，沙子；沙滩</label></li>
+         <li><input type="radio"  name="options-2865" id="option-2865-d" value="3"/><label for="option-2865-d">D.n.堆 vt.堆叠，累积</label></li>
+         <li><input type="radio"  name="options-2865" id="option-2865-e" value="-1"/><label for="option-2865-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2865">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.堆 vt.堆叠，累积</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-937" data-value="0">
+     <span>43-curious</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-937" id="option-937-a" value="0"/><label for="option-937-a">A.a.好奇的；稀奇古怪的</label></li>
+         <li><input type="radio"  name="options-937" id="option-937-b" value="1"/><label for="option-937-b">B.pron.我们自己</label></li>
+         <li><input type="radio"  name="options-937" id="option-937-c" value="2"/><label for="option-937-c">C.n.民主，民主制</label></li>
+         <li><input type="radio"  name="options-937" id="option-937-d" value="3"/><label for="option-937-d">D.n.铲，铁锹</label></li>
+         <li><input type="radio"  name="options-937" id="option-937-e" value="-1"/><label for="option-937-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-937">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:A a.好奇的；稀奇古怪的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2574" data-value="3">
+     <span>44-nitrogen</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2574" id="option-2574-a" value="0"/><label for="option-2574-a">A.n.雇佣者，雇主</label></li>
+         <li><input type="radio"  name="options-2574" id="option-2574-b" value="1"/><label for="option-2574-b">B.ad.永久/持久地</label></li>
+         <li><input type="radio"  name="options-2574" id="option-2574-c" value="2"/><label for="option-2574-c">C.a.垂直的，竖式的</label></li>
+         <li><input type="radio"  name="options-2574" id="option-2574-d" value="3"/><label for="option-2574-d">D.n.氮</label></li>
+         <li><input type="radio"  name="options-2574" id="option-2574-e" value="-1"/><label for="option-2574-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2574">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.氮</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-1129" data-value="3">
+     <span>45-divorce</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-1129" id="option-1129-a" value="0"/><label for="option-1129-a">A.n.(脚)步；步骤 vi.走</label></li>
+         <li><input type="radio"  name="options-1129" id="option-1129-b" value="1"/><label for="option-1129-b">B.n.会话,非正式会谈</label></li>
+         <li><input type="radio"  name="options-1129" id="option-1129-c" value="2"/><label for="option-1129-c">C.n.害怕；担心 vt.害怕</label></li>
+         <li><input type="radio"  name="options-1129" id="option-1129-d" value="3"/><label for="option-1129-d">D.n.离婚，离异 vi.离婚</label></li>
+         <li><input type="radio"  name="options-1129" id="option-1129-e" value="-1"/><label for="option-1129-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-1129">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.离婚，离异 vi.离婚</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-179" data-value="3">
+     <span>46-apparent</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-179" id="option-179-a" value="0"/><label for="option-179-a">A.n.题目；学科；主语</label></li>
+         <li><input type="radio"  name="options-179" id="option-179-b" value="1"/><label for="option-179-b">B.n.物主，所有人</label></li>
+         <li><input type="radio"  name="options-179" id="option-179-c" value="2"/><label for="option-179-c">C.n.社会；团体；社交界</label></li>
+         <li><input type="radio"  name="options-179" id="option-179-d" value="3"/><label for="option-179-d">D.a.表面上的；明显的</label></li>
+         <li><input type="radio"  name="options-179" id="option-179-e" value="-1"/><label for="option-179-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-179">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D a.表面上的；明显的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-2555" data-value="1">
+     <span>47-nervous</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-2555" id="option-2555-a" value="0"/><label for="option-2555-a">A.vi.退下；引退；就寝</label></li>
+         <li><input type="radio"  name="options-2555" id="option-2555-b" value="1"/><label for="option-2555-b">B.a.神经的；易激动的</label></li>
+         <li><input type="radio"  name="options-2555" id="option-2555-c" value="2"/><label for="option-2555-c">C.n.教学，讲授；教导</label></li>
+         <li><input type="radio"  name="options-2555" id="option-2555-d" value="3"/><label for="option-2555-d">D.vi.滑跤；滑落；溜</label></li>
+         <li><input type="radio"  name="options-2555" id="option-2555-e" value="-1"/><label for="option-2555-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-2555">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:B a.神经的；易激动的</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-1404" data-value="3">
+     <span>48-facility</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-1404" id="option-1404-a" value="0"/><label for="option-1404-a">A.n.节目单；大纲；程序</label></li>
+         <li><input type="radio"  name="options-1404" id="option-1404-b" value="1"/><label for="option-1404-b">B.n.有，所有；占有物</label></li>
+         <li><input type="radio"  name="options-1404" id="option-1404-c" value="2"/><label for="option-1404-c">C.n.&vi.争论，辩论</label></li>
+         <li><input type="radio"  name="options-1404" id="option-1404-d" value="3"/><label for="option-1404-d">D.n.设备；容易；便利</label></li>
+         <li><input type="radio"  name="options-1404" id="option-1404-e" value="-1"/><label for="option-1404-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-1404">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:D n.设备；容易；便利</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-943" data-value="2">
+     <span>49-cushion</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-943" id="option-943-a" value="0"/><label for="option-943-a">A.n.垃圾，污物，废料</label></li>
+         <li><input type="radio"  name="options-943" id="option-943-b" value="1"/><label for="option-943-b">B.ad.向上；起床，起来</label></li>
+         <li><input type="radio"  name="options-943" id="option-943-c" value="2"/><label for="option-943-c">C.n.垫子，坐垫，靠垫</label></li>
+         <li><input type="radio"  name="options-943" id="option-943-d" value="3"/><label for="option-943-d">D.n.(小山)山腰，山坡</label></li>
+         <li><input type="radio"  name="options-943" id="option-943-e" value="-1"/><label for="option-943-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-943">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:C n.垫子，坐垫，靠垫</span>
+     </div>
+    </div>
+    
+    <div class="question-zone" id="q-3147" data-value="1">
+     <span>50-rare</span>
+     <ul class="options">
+         <li><input type="radio"  name="options-3147" id="option-3147-a" value="0"/><label for="option-3147-a">A.n.档案 vt.把…归档</label></li>
+         <li><input type="radio"  name="options-3147" id="option-3147-b" value="1"/><label for="option-3147-b">B.a.稀薄的；稀有的</label></li>
+         <li><input type="radio"  name="options-3147" id="option-3147-c" value="2"/><label for="option-3147-c">C.a.外部的，外面的</label></li>
+         <li><input type="radio"  name="options-3147" id="option-3147-d" value="3"/><label for="option-3147-d">D.n.大会；国会，议会</label></li>
+         <li><input type="radio"  name="options-3147" id="option-3147-e" value="-1"/><label for="option-3147-e">E.不会</label></li>
+     </ul>
+     <div class="result hide" id="q-r-3147">
+          <span class="hide good">答对了</span>
+          <span class="hide wrong">答错了,正确答案为:B a.稀薄的；稀有的</span>
+     </div>
+    </div>
+    
+        </div>
+        <script>
+            let score = 0;
+            let wrongIds = []
+            function setWrongQuestion(){
+                console.log(wrongIds)
+            }
+            function showResult(){
+                score=0;
+                wrongIds.length=0;
+                const questionsDOM = document.querySelectorAll(".question-zone");
+                questionsDOM.forEach((elem)=>{
+                    const rightIndex = elem.getAttribute("data-value")
+                    const userAnswerInput = elem.querySelector(":checked");
+                    if(userAnswerInput){
+                        const userAnswer = userAnswerInput.getAttribute("value")
+                        elem.querySelector(".result").className="result"
+                        if(rightIndex*1===userAnswer*1){
+                            score++
+                            elem.querySelector(".good").className="good"
+                        }else{
+                            elem.querySelector(".wrong").className="wrong"
+                            const worngQID = elem.id.replace("q-",'')
+                            wrongIds.push(worngQID)
+                        }
+                    }
+                   
+                });
+                document.getElementById("score").innerText="得分："+score;
+            }
+        </script>
+    </body>
+</html>
